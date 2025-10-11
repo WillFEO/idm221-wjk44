@@ -21,12 +21,20 @@ _paginate: skip
 - Right at the top
 
   - **Tools used:** Figma, Google Slides
-  - **Duration:** Three months
+  - **Duration:** One month
   - **Roles:** Usability Evaluator
 
 ## Overview
 
-- For my Human-Computer Interaction final project, I was placed in a team and tasked with evaluating three pages of a website for major usability errors and creating three improved wireframes to address those issues. We chose Craigslist due to its famously outdated UI and cluttered layout. While this was a group project, the majority of the work was completed independently, with only minor collaboration at the end to merge our results. Out of six group members, my product listing redesign was selected as one of the final three to be presented.
+- For my Human-Computer Interaction final project, my team analyzed three pages of Craigslist to identify usability errors and redesign them for clarity and accessibility. Craigslist’s interface is famously cluttered and inconsistent, making it ideal for a usability overhaul.
+
+## Problem
+
+Craigslist’s outdated interface suffers from poor hierarchy, limited feedback, and inconsistent visual structure, making browsing and posting listings unnecessarily difficult. My goal was to modernize these pages while preserving the platform’s simple, community-driven identity.
+
+## Research
+
+I conducted a heuristic evaluation based on Jakob Nielsen’s usability heuristics and noted recurring complaints from online reviews. **The main usability themes were poor information hierarchy, low discoverability, and a lack of feedback mechanisms.** These findings shaped my redesign focus areas.
 
 ## Pages Evaluated & Key Issues
 
@@ -39,33 +47,22 @@ _paginate: skip
 
 **_Image: Current Craigslist Product Listing Page_**
 
-## Wireframe 1: Home Page – Conceptual Model
+### Wireframe 1: Home Page – Conceptual Model
 
-- _Header reorganized_ to fit user expectations.
-- _Location given greater prominence,_ as Craigslist is a location-centered service.
-- _Listing groups given clearer structure,_ with bold section headers in large font.
-- _Collapsible menu system_ introduced for better navigation and hierarchy.
-- _Capped number of displayed listings_ in each category, moving excess into a “More” menu.
+- Reorganized header to align with user expectations.
+- Increased location prominence for easier regional browsing.
+- Introduced collapsible category menus and capped visible listings for cleaner hierarchy.
 
-**_Image: Homepage redesigned wireframe_**
+### Wireframe 2: Product Listing Page – Knowledge in the Head vs. the World
 
-## Wireframe 2: Product Listing Page - Knowledge in the Head vs. the World
+- Added in-app messaging for direct contact with sellers.
+- Implemented larger image carousel and improved breadcrumb navigation.
 
-- _In-app messaging system added,_ allowing users to contact sellers without leaving the page or switching between tabs.
-- _Larger image carousel,_ displaying more visual details at once.
-- _Breadcrumb navigation improved,_ making it clearer where users are and where they have been.
+### Wireframe 3: Posting Form – Feedback & Constraints
 
-**_Image: Product listing page redesigned wireframe_**
-
-## Wireframe 3: Posting a Listing – Feedback & Constraints
-
-- _Initial message clarifying input requirements,_ reducing user frustration.
-- _Error messages introduced,_ guiding users when mistakes occur.
-- _Dropdown menus that dynamically disappear,_ preventing incompatible choices.
-- _Later sections greyed out until prerequisite fields are completed,_ preventing confusion.
-- _Final prompt before submission,_ reminding users to review incomplete fields before continuing.
-
-**_Image: Listing form redesigned wireframe_**
+- Added input prompts and live error feedback.
+- Introduced dynamic dropdowns that disable incompatible options.
+- Required completion of prerequisite fields before later sections unlock.
 
 ## Link to the file
 
@@ -79,3 +76,5 @@ _paginate: skip
 ## Impact and Reflection
 
 - By focusing on usability principles and common pain points, my redesigns brought clarity, accessibility, and ease of use to Craigslist’s interface. This project reinforced my ability to analyze usability issues critically and propose effective design solutions, skills that are essential for my work in UX design.
+
+> _This project is a conceptual redesign created for educational purposes only._

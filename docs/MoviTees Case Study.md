@@ -26,21 +26,13 @@ _paginate: skip
 
 ## Overview
 
-MoviTees is a niche merchandise company that designs, produces, and sells apparel featuring in-universe logos from popular movies. Their products are for dedicated movie fans who appreciate subtle, high-quality designs that feel like insider references. However, despite the company’s strong branding and product quality, its website suffers from major usability issues that hinder the shopping experience. **PARAGRAPH BREAK** I spent six months redesigning the MoviTees website by conducting user research and creating wireframes and high-fidelity prototypes for desktop, tablet, and mobile. My redesign focused on improving navigation, information hierarchy, and overall usability while maintaining the company’s established aesthetic.
+MoviTees is a movie-inspired apparel company with strong branding but poor usability. Over six months, I redesigned their website to improve navigation, hierarchy, and shopping flow while preserving the brand’s subtle, fan-driven aesthetic.
 
 ## The Problems
 
-- Lack of Search and Navigation Tools
-  - No search functionality or filtering options, making it difficult to browse products efficiently.
-  - The “Choose a Movie” page required excessive vertical scrolling, slowing down the user experience.
-- Poor Information Organization
-  - Product pages lacked essential details about the designs but had overwhelming, unnecessary text on fabric specifications.
-  - The homepage failed to introduce the brand, featuring only images without product names or context.
-  - The sizing chart was hard to find and took users to a lengthy and confusing page.
-- Inefficient Layout and UI Design
-  - The homepage displayed seemingly random products without clear guidance.
-  - Product images stacked vertically, requiring unnecessary scrolling.
-  - Navigation paths were unclear, leading to frustration for first-time users.
+The site’s structure made browsing and purchasing difficult: unclear organization, missing search and filters, and text-heavy product pages created friction for new users.
+
+**Goal:** make shopping intuitive and visually engaging while maintaining the brand’s tone.
 
 **_Image: Bad Home Page_**
 
@@ -50,30 +42,31 @@ MoviTees is a niche merchandise company that designs, produces, and sells appare
 
 ### User Research and Analysis
 
-To better understand MoviTees’ users, I conducted a detailed analysis of customer reviews. Patterns emerged: many buyers were middle-aged, family-oriented, and motivated by nostalgia, product quality, and the “in-the-know” appeal of the designs. Based on these insights, I created a user persona, Christopher Smith, to guide my design decisions.
+I conducted an analysis of reviews, a heuristic evaluation, and a card-sorting exercise to identify navigation pain points.
 
-I then conducted:
-
-- _Card sorting excercises_ to optimize the site's information architecture
-- _Usability Heuristic evaluations_ on my redesign to find any issues or pain points
+**Findings:** Users valued nostalgia and design quality but were frustrated by long scrolls, hidden sizing guides, and a lack of search.
 
 **_Image: Card Sorting Excercise_**
 
 ### Design and Prototyping
 
-Using Figma, I developed wireframes and high-fidelity prototypes for key pages, focusing on a smooth path from landing on the site to completing a purchase.
+Using Figma, I developed wireframes and high-fidelity prototypes for desktop, tablet, and mobile.
 
-My designs included:
+**Key features:**
 
-- _A redesigned homepage_ with clear branding, featured collections, and prominent search functionality.
-- _A "Choose a Movie" page_ structured horizontally for easier browsing.
-- _A movie-specific product page_ allowing users to choose any products themed around a specific movie.
-- _Refined product pages_ with prioritized information, including product names, design descriptions, and clear call-to-action buttons.
-- _A dedicated sizing guide_ embedded within product pages for easy access.
-- _A functional cart system_ ith clear item details and quantity changing options.
-- _A streamlined checkout experience_ with an intuitive step-by-step process.
+- Redesigned homepage with featured collections and clear branding
+- Horizontal “Choose a Movie” browsing system
+- Simplified product pages with essential info and dropdown sizing guide
+- Functional cart and streamlined checkout
 
 Throughout the process, I leveraged Figma's Auto Layout, components, variables, animations, and prototyping features to create a scalable and flexible design system.
+
+## Before and After
+
+**_Image: Old Homepage_**  
+**_Image: Old Choose a Movie Page_**  
+**_Image: Improved Choose a Movie Page_**  
+**_Image: Desktop Frames with Prototyping Flows_**
 
 ## Key Improvements
 
@@ -84,20 +77,14 @@ Throughout the process, I leveraged Figma's Auto Layout, components, variables, 
 - _Condensed large blocks of text_ into dropdowns and easily digestible lists.
 - _Brought a dropdown system to the sizing chart_ to allow users to find their desired information with much less confusion.
 
-**_Image: Improved Choose a Movie Page_**
-
-**_Image: Improved Product Page_**
-
-**_Image: Desktop Frames with Prototyping Flows Visible_**
-
 ## Link to the file
 
 ## Outcome
 
-The redesigned MoviTees website provides a vastly improved user experience while preserving the brand’s identity. The new layout enhances usability, streamlines the shopping journey, and ensures that both new and returning customers can easily find and purchase products.
+The redesign improved information hierarchy, added search functionality, and reduced user effort. It transformed MoviTees into a more professional and approachable brand presence.
 
-This project reinforced my skills in UX research, information architecture, and interface design while deepening my expertise in Figma and design systems. Most importantly, it demonstrated the impact of thoughtful UX improvements on a real-world business.
+## Reflection
 
-## Next Steps and Reflection
+This project honed my research and design system skills, and deepened my understanding of how structure and clarity directly shape conversion and user trust.
 
-While the redesign addressed major usability concerns, future iterations could explore additional personalization features, such as recommended products based on past purchases or a “Favorites” list. Continued user testing would further refine the experience.
+> _This project is a conceptual redesign created for educational purposes only._

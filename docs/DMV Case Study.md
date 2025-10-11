@@ -21,33 +21,33 @@ _paginate: skip
 - Right at the top
 
   - **Tools used:** Miro, Discord, Physical crafts tools (Box cutters, rulers, pencils)
-  - **Duration:** Three months
+  - **Duration:** Two months
   - **Roles:** Prototyping Co-leader, Prototype Designer
 
 ## Overview
 
-For our final project in my Design Thinking in Production class, our class operated as a full-scale design agency, collaborating across multiple departments to tackle a notoriously frustrating user experience: the DMV. After selecting the West Hollywood DMV as our focus, we formed teams specializing in UX research, UX design, storytelling, concept development, and prototyping—where I played a key role.
+For our final project in my Design Thinking in Production class, our class operated as a full-scale design agency to tackle a notoriously frustrating user experience: the DMV. After selecting the West Hollywood DMV as our focus, we formed teams specializing in UX research, UX design, storytelling, concept development, and prototyping — where I played a key role.
+
+## Problem
+
+Long waits, unclear navigation, and uncomfortable environments make DMVs synonymous with frustration. We set out to understand the root causes of this negative experience and redesign the space to better support both users and staff.
+
+## Research
+
+This project provided the unique experience of having a UX Research "department" working alongside us. This allowed my prototyping department to devote our full focus to solving the issues they gave us.
 
 ## Project Vision: A Smarter, More Engaging DMV Experience
 
-DMVs are infamous for inefficiency, long wait times, and uncomfortable environments. Our goal was to transform the West Hollywood DMV into a space that maximized efficiency, improved user flow, and created a more pleasant waiting experience. Through extensive brainstorming, our key redesign principles emerged:
+Our goal was to transform the West Hollywood DMV into a space that maximized efficiency, improved user flow, and created a more pleasant waiting experience. Through extensive brainstorming, our key redesign principles emerged:
 
-- _Optimized floorspace_ with clear branding, featured collections, and prominent search functionality.
 - _Increased natural light_ to enhance ambiance and reduce stress.
 - _Smarter seating arrangements_ that allow for comfort and efficiency.
 - _A built-in café,_ capitalizing on expected wait times by offering a more engaging, revenue-generating experience.
 - _A kiosk system_ to streamline both DMV check-in and café ordering, reducing the need for staff intervention and improving overall service flow.
 
-## Our Role as the Prototyping Team
+## My Role: The Prototyping Team
 
-As the prototyping department, our objectives were clear:
-
-- Construct a _scaled model_ of the current DMV layout.
-- Develop _small-scale elements_ to visualize our proposed changes.
-- _Prototype one full-scale object,_ selected in agreement with all teams.
-- _Create detailed floorplan designs_ to reflect our redesign vision.
-
-Our team determined that the most impactful object to prototype at full scale was the _self-service kiosk,_ a critical element of our user experience overhaul.
+Our four-person prototyping team created a **scaled model of the DMV** and a **full-scale interactive kiosk prototype** — the centerpiece of the redesigned service flow.
 
 **_Image: Scale Model Overview_**
 
@@ -55,10 +55,10 @@ Our team determined that the most impactful object to prototype at full scale wa
 
 In our four-person prototyping team, I took on a central role in the _design and construction_ of the full-scale kiosk prototype. My key contributions included:
 
-- _Designing the kiosk from the ground up,_ including calculating all measurements and dimensions to ensure ergonomic and accessible use.
-- _Researching and sourcing materials,_ purchasing all necessary supplies including cardboard, foam board, tape, and adhesives within an $80 budget.
-- _Leading construction efforts,_ guiding my teammates in understanding the design vision and ensuring accurate cutting and assembly of components.
-- _Ensuring accessibility compliance,_ incorporating research on wheelchair heights, standing comfort, and motor control accommodations into the design.
+- _Designing the kiosk from the ground up,_ calculating ergonomic dimensions for accessibility.
+- _Researching and sourcing materials_ within an $80 budget.
+- _Leading construction efforts,_ guiding my teammates in understanding the design vision and ensuring accurate assembly of components.
+- _Ensuring accessibility compliance_ for both wheelchair and standing users.
 
 ## Designing an Accessible, Dual-Purpose Kiosk
 
@@ -81,12 +81,10 @@ To create a more inclusive and efficient kiosk, we researched accessibility stan
 
 **_Image: Sliders out, shallower screen angle_**
 
-## Collaboration and Iteration
+## Collaboration and Outcome
 
-Throughout the project, our team maintained close communication with other departments, ensuring our prototype aligned with research insights and design goals. Regular feedback loops allowed us to refine our kiosk and adjust the floorplan model as necessary. We adapted our approach as new information arose, ensuring that the final design was as practical as it was innovative.
-
-## Outcome and Impact
-
-Our redesigned DMV concept successfully reimagined an often-overlooked government space. By focusing on user needs, accessibility, and a more engaging environment, our team demonstrated how human-centered design can drastically improve even the most mundane experiences. This project was an incredible opportunity to work within a large, multidisciplinary team, refining not only my prototyping skills but also my ability to adapt, collaborate, and execute a user-first vision.
+Close coordination between departments ensured consistency across research and design. Our prototype demonstrated how **small physical changes can redefine public service experiences**, making them more efficient and humane. This project strengthened my collaboration and prototyping skills while showing how UX principles extend beyond digital products.
 
 **_Image: Full View of Kiosk_**
+
+> _This project is a conceptual redesign created for educational purposes only._
