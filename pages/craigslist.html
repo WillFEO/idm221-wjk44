@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Index</title>
+    <title>Craigslist Case Study</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <!-- Header -->
@@ -17,11 +23,11 @@
       <nav>
         <button id="hamburger-button" title="Toggle menu">Menu</button>
         <ul id="header-menu">
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="other-works.html">Other Works</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="light-link" href="#projects">Projects</a></li>
+          <li><a class="light-link" href="#about">About</a></li>
+          <li><a class="light-link" href="other-works.html">Other Works</a></li>
+          <li><a class="light-link" href="resume.html">Resume</a></li>
+          <li><a class="light-link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -29,10 +35,12 @@
 
     <main>
       <section>
-        <h1>Craigslist Usability Redesign: Improving an Outdated UI</h1>
+        <h1 class="page-title">
+          Craigslist Usability Redesign: Improving an Outdated UI
+        </h1>
         <img
           src="../images/craigslist/craigslist-hero.webp"
-          alt="Hero image of the DMV kiosk prototype"
+          alt="Craigslist redesigned wireframe hero"
         />
         <p>
           Tools: Figma, Google Slides<br />Duration: 1 month<br />Roles:
@@ -51,7 +59,7 @@
       </nav>
 
       <section id="overview">
-        <h2>Overview</h2>
+        <h2 class="section-title">Overview</h2>
         <p>
           For my Human-Computer Interaction final project, my team analyzed
           three pages of Craigslist to identify usability errors and redesign
@@ -61,7 +69,7 @@
       </section>
 
       <section id="problem">
-        <h2>The Problem</h2>
+        <h2 class="section-title">The Problem</h2>
         <p>
           Craigslist’s outdated interface suffers from poor hierarchy, limited
           feedback, and inconsistent visual structure, making browsing and
@@ -72,7 +80,7 @@
       </section>
 
       <section id="research">
-        <h2>Research</h2>
+        <h2 class="section-title">Research</h2>
         <p>
           I conducted a heuristic evaluation based on Jakob Nielsen’s usability
           heuristics and noted recurring complaints from online reviews. The
@@ -83,7 +91,7 @@
       </section>
 
       <section id="pages-evaluated">
-        <h2>Pages Evaluated</h2>
+        <h2 class="section-title">Pages Evaluated</h2>
         <ul>
           <li>
             The Home Page: Suffers from poor information hierarchy and an
@@ -101,25 +109,25 @@
         <figure>
           <img
             src="../images/craigslist/craigslist-current-homepage.webp"
-            alt="Image of the current craigslist homepage"
+            alt="Current craigslist homepage"
           />
           <figcaption>Current Craigslist Homepage</figcaption>
         </figure>
         <figure>
           <img
             src="../images/craigslist/craigslist-current-productpage.webp"
-            alt="Image of the current craigslist product page"
+            alt="Current craigslist product page"
           />
           <figcaption>Current Craigslist product page</figcaption>
         </figure>
       </section>
 
       <section id="wireframes">
-        <h2>Wireframe Redesigns</h2>
+        <h2 class="section-title">Wireframe Redesigns</h2>
         <h3>Wireframe 1: Home Page</h3>
         <img
           src="../images/craigslist/craigslist-redesigned-homepage.webp"
-          alt="Image of the redesigned home page wireframe"
+          alt="Redesigned home page wireframe"
         />
         <ul>
           <li>Reorganized header to align with user expectations</li>
@@ -132,7 +140,7 @@
         <h3>Wireframe 2: Product Page</h3>
         <img
           src="../images/craigslist/craigslist-redesigned-productpage.webp"
-          alt="Image of the redesigned product wireframe"
+          alt="Redesigned product wireframe"
         />
         <ul>
           <li>Added in-app messaging for direct contact with sellers</li>
@@ -143,7 +151,7 @@
         <h3>Wireframe 3: Listing Form</h3>
         <img
           src="../images/craigslist/craigslist-redesigned-productlistingform.webp"
-          alt="Image of the redesigned product listing form wireframe"
+          alt="Redesigned product listing form wireframe"
         />
         <ul>
           <li>Added input prompts and live error feedback</li>
@@ -155,11 +163,18 @@
             unlock
           </li>
         </ul>
-        <p>Check out the Figma file <a href="#" target="_blank">here!</a></p>
+        <p>
+          Check out the Figma file
+          <a
+            href="https://www.figma.com/design/otMBkbQk5x4Z705EIsQLWn/INFO-110-Wireframing-Project?node-id=0-1&p=f"
+            target="_blank"
+            >here!</a
+          >
+        </p>
       </section>
 
       <section id="don-normans-principles">
-        <h2>Integrating UX Principles</h2>
+        <h2 class="section-title">Integrating UX Principles</h2>
         <p>
           I applied concepts from Don Norman’s The Design of Everyday Things
           throughout my redesign:
@@ -181,7 +196,7 @@
       </section>
 
       <section id="reflection">
-        <h2>Collaboration and Outcome</h2>
+        <h2 class="section-title">Collaboration and Outcome</h2>
         <p>
           By focusing on usability principles and common pain points, my
           redesigns brought clarity, accessibility, and ease of use to
@@ -202,15 +217,15 @@
       <!-- Footer navigation -->
       <nav>
         <p>
-          <a href="index.html#projects">Projects</a>
+          <a class="light-link" href="#projects">Projects</a>
           <br />
-          <a href="index.html#about">About</a>
+          <a class="light-link" href="#about">About</a>
           <br />
-          <a href="other-works.html">Other Works</a>
+          <a class="light-link" href="other-works.html">Other Works</a>
           <br />
-          <a href="resume.html">Resume</a>
+          <a class="light-link" href="resume.html">Resume</a>
           <br />
-          <a href="contact.html">Contact</a>
+          <a class="light-link" href="contact.html">Contact</a>
         </p>
       </nav>
 
@@ -218,12 +233,15 @@
       <div class="socials">
         <p>
           <a
+            class="light-link"
             href="https://www.linkedin.com/in/william-kalb-07796a26b/"
             target="_blank"
             >LinkedIn</a
           >
           <br />
-          <a href="mailto:wjk44@drexel.edu" target="_blank">Email</a>
+          <a class="light-link" href="mailto:wjk44@drexel.edu" target="_blank"
+            >Email</a
+          >
         </p>
       </div>
 

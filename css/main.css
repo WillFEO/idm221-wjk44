@@ -1,0 +1,44 @@
+:root {
+  --color-dark-shale: #121417;
+  --color-off-white: #f4f6f8;
+  --color-cyan: #36e5cd;
+  --color-blue: #2e6df6;
+  --color-red: #db2d52;
+
+  --color-background: var(--color-dark-shale);
+  --color-text: var(--color-off-white);
+  --color-primary: var(--color-blue);
+  --color-accent-1: var(--color-cyan);
+  --color-accent-2: var(--color-red);
+}
+
+html {
+  background-color: var(--color-background);
+}
+
+p,
+li,
+figcaption,
+.light-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+}
+
+nav,
+footer {
+  background-color: var(--color-primary);
+}
+
+a,
+.page-title {
+  color: var(--color-accent-1);
+}
+
+.section-title {
+  color: var(--color-accent-2);
+}

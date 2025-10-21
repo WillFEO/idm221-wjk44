@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Index</title>
+    <title>Showtime Case Study</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <!-- Header -->
@@ -17,11 +23,11 @@
       <nav>
         <button id="hamburger-button" title="Toggle menu">Menu</button>
         <ul id="header-menu">
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="other-works.html">Other Works</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="light-link" href="#projects">Projects</a></li>
+          <li><a class="light-link" href="#about">About</a></li>
+          <li><a class="light-link" href="other-works.html">Other Works</a></li>
+          <li><a class="light-link" href="resume.html">Resume</a></li>
+          <li><a class="light-link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -29,10 +35,12 @@
 
     <main>
       <section>
-        <h1>Showtime: Redefining Microinteractions for Moviegoers</h1>
+        <h1 class="page-title">
+          Showtime: Redefining Microinteractions for Moviegoers
+        </h1>
         <img
           src="../images/showtime/showtime-hero.webp"
-          alt="Hero image of the Showtime app"
+          alt="Showtime app hero"
         />
         <p>
           Tools: Figma, After Effects, Jitter, Figmotion<br />Duration: 3
@@ -50,7 +58,7 @@
       </nav>
 
       <section id="overview">
-        <h2>Overview</h2>
+        <h2 class="section-title">Overview</h2>
         <p>
           For my Interaction Design class, I reimagined the mobile app of a
           leading movie-ticketing service, focusing on how motion and feedback
@@ -60,7 +68,7 @@
       </section>
 
       <section id="problem">
-        <h2>The Problem</h2>
+        <h2 class="section-title">The Problem</h2>
         <p>
           The original app offered functional features — browsing, seat
           selection, payment — but lacked proper motion feedback and polish.
@@ -69,7 +77,7 @@
       </section>
 
       <section id="research">
-        <h2>Research</h2>
+        <h2 class="section-title">Research</h2>
         <p>
           I conducted a short competitive review of major cinema and streaming
           apps (AMC, Fandango, Netflix) to study how animation contributes to
@@ -78,7 +86,7 @@
       </section>
 
       <section id="design-approach">
-        <h2>Design Approach</h2>
+        <h2 class="section-title">Design Approach</h2>
         <h3>Processes and Tools</h3>
         <p>
           All design and animation were created in Figma, with Figmotion and
@@ -106,23 +114,39 @@
       </section>
 
       <section id="video-demo">
-        <h2>Video Demo</h2>
+        <h2 class="section-title">Video Demo</h2>
         <p>
           This video shows a user progression through my entire Figma prototype.
         </p>
-        <p>**Video Here**</p>
+        <div class="video-container">
+          <iframe
+            src="https://youtube.com/embed/AyVSRVKjTYw?feature=share"
+            title="Project Demo Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
         <figure>
           <img
             src="../images/showtime/showtime-prototype-flows.webp"
-            alt="Image of Figma prototype flow"
+            alt="Figma prototype flow"
           />
           <figcaption>Figma prototype flow</figcaption>
         </figure>
-        <p>Check out the Figma file <a href="#" target="_blank">here!</a></p>
+        <p>
+          Check out the Figma file
+          <a
+            href="https://www.figma.com/design/yKeuVpOUjW9D6RPAmrTg00/Task-Flow-Template?node-id=1151-2979&t=UzvYhD2lCvPslIu2-1"
+            target="_blank"
+            >here!</a
+          >
+        </p>
       </section>
 
       <section id="outcome">
-        <h2>Outcome</h2>
+        <h2 class="section-title">Outcome</h2>
         <p>
           The redesign transforms a static experience into one that feels
           cohesive, intuitive, and playful. Each motion reinforces usability
@@ -131,7 +155,7 @@
       </section>
 
       <section id="reflection">
-        <h2>Reflection</h2>
+        <h2 class="section-title">Reflection</h2>
         <p>
           This project showed how small design details define how users feel.
           Building Showtime strengthened my skills in interface animation,
@@ -151,15 +175,15 @@
       <!-- Footer navigation -->
       <nav>
         <p>
-          <a href="index.html#projects">Projects</a>
+          <a class="light-link" href="#projects">Projects</a>
           <br />
-          <a href="index.html#about">About</a>
+          <a class="light-link" href="#about">About</a>
           <br />
-          <a href="other-works.html">Other Works</a>
+          <a class="light-link" href="other-works.html">Other Works</a>
           <br />
-          <a href="resume.html">Resume</a>
+          <a class="light-link" href="resume.html">Resume</a>
           <br />
-          <a href="contact.html">Contact</a>
+          <a class="light-link" href="contact.html">Contact</a>
         </p>
       </nav>
 
@@ -167,12 +191,15 @@
       <div class="socials">
         <p>
           <a
+            class="light-link"
             href="https://www.linkedin.com/in/william-kalb-07796a26b/"
             target="_blank"
             >LinkedIn</a
           >
           <br />
-          <a href="mailto:wjk44@drexel.edu" target="_blank">Email</a>
+          <a class="light-link" href="mailto:wjk44@drexel.edu" target="_blank"
+            >Email</a
+          >
         </p>
       </div>
 
