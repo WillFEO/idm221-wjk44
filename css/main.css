@@ -19,6 +19,7 @@ html {
 p,
 li,
 figcaption,
+.logo-text,
 .light-link,
 h1,
 h2,
@@ -29,7 +30,7 @@ h6 {
   color: var(--color-text);
 }
 
-nav,
+header,
 footer {
   background-color: var(--color-primary);
 }
