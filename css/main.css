@@ -128,7 +128,6 @@ header,
 /* Navigation containers */
 .nav-menu {
   position: relative;
-  display: flex;
   margin-left: auto;
   right: 0;
   padding: 0.5rem 0;
