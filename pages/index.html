@@ -20,15 +20,22 @@
       </div>
 
       <!-- Hamburger dropdown -->
-      <nav>
-        <button id="hamburger-button" title="Toggle menu">Menu</button>
-        <ul id="header-menu">
+      <nav class="nav-menu">
+        <input
+          type="checkbox"
+          id="hamburger-toggle"
+          class="hamburger-checkbox"
+        />
+
+        <ul class="nav-links hamburger-links">
           <li><a class="light-link" href="#projects">Projects</a></li>
           <li><a class="light-link" href="#about">About</a></li>
           <li><a class="light-link" href="other-works.html">Other Works</a></li>
           <li><a class="light-link" href="resume.html">Resume</a></li>
           <li><a class="light-link" href="contact.html">Contact</a></li>
         </ul>
+
+        <label for="hamburger-toggle" class="hamburger-button"></label>
       </nav>
     </header>
     <!-- End Header -->
@@ -163,38 +170,46 @@
 
     <!-- Footer -->
     <footer>
-      <!-- Footer navigation -->
-      <nav>
-        <p>
-          <a class="light-link" href="#projects">Projects</a>
-          <br />
-          <a class="light-link" href="#about">About</a>
-          <br />
-          <a class="light-link" href="other-works.html">Other Works</a>
-          <br />
-          <a class="light-link" href="resume.html">Resume</a>
-          <br />
-          <a class="light-link" href="contact.html">Contact</a>
-        </p>
-      </nav>
+      <div class="footer-top">
+        <!-- Home Anchor -->
+        <div class="brand">
+          <a class="logo-text" href="index.html">William Kalb</a>
+        </div>
 
-      <!-- Socials -->
-      <div class="socials">
-        <p>
-          <a
-            class="light-link"
-            href="https://www.linkedin.com/in/william-kalb-07796a26b/"
-            target="_blank"
-            >LinkedIn</a
-          >
-          <br />
-          <a class="light-link" href="mailto:wjk44@drexel.edu" target="_blank"
-            >Email</a
-          >
-        </p>
+        <!-- Footer navigation -->
+        <nav class="footer-nav-menu">
+          <ul class="nav-links">
+            <li><a class="light-link" href="#projects">Projects</a></li>
+            <li><a class="light-link" href="#about">About</a></li>
+            <li>
+              <a class="light-link" href="other-works.html">Other Works</a>
+            </li>
+            <li><a class="light-link" href="resume.html">Resume</a></li>
+            <li><a class="light-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <p class="easteregg">What are you doing down here?</p>
+      <div class="footer-bottom">
+        <!-- Socials -->
+        <div class="socials">
+          <ul class="nav-links bottom-links">
+            <li>
+              <a
+              class="light-link"
+              href="https://www.linkedin.com/in/william-kalb-07796a26b/"
+              target="_blank"
+              >LinkedIn</a>
+            </li>
+            <li>
+              <a class="light-link" href="mailto:wjk44@drexel.edu" target="_blank"
+              >Email</a
+            >
+            </li>
+        </div>
+
+        <p class="easteregg">What are you doing down here?</p>
+      </div>
     </footer>
     <!-- End Footer -->
   </body>

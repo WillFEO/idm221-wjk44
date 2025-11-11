@@ -1,3 +1,4 @@
+/* ============= GLOBAL COLOR AND OTHER VARIABLES ============= */
 :root {
   --color-dark-shale: #121417;
   --color-mid-shale: #1e2128;
@@ -14,6 +15,7 @@
   --color-accent-2: var(--color-red);
 }
 
+/* ============= FONT FACES ============= */
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins/Poppins-VariableFont_wght.ttf") format("truetype");
@@ -27,6 +29,7 @@
   font-weight: 100 900;
 }
 
+/* ============= GLOBAL LAYOUT & BASIC ELEMENTS ============= */
 html {
   background-color: var(--color-background);
 }
@@ -50,30 +53,18 @@ main {
   text-align: center;
 }
 
-p,
-li,
-figcaption,
-.logo-text,
-.light-link,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-text);
-}
+/* ============= TYPOGRAPHY: SHARED TEXT/HEADINGS ============= */
 
 p,
 a,
 li,
 figcaption,
-.logo-text,
 .light-link {
   font-family: "DM Sans", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 300;
+  color: var(--color-text);
 }
 
 h1,
@@ -81,20 +72,133 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.logo-text {
   font-family: "Poppins", sans-serif;
   line-height: 1.25;
+  color: var(--color-text);
 }
 
+.logo-text {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* ============= HEADER & FOOTER ============= */
 header,
 footer {
   background-color: var(--color-primary);
 }
 
+header,
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 3px solid var(--color-text);
+}
+
+.footer-top {
+  height: fit-content;
+}
+
+/* ============= NAVIGATION MENU STYLES ============= */
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-button {
+  background: none;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}
+
+.hamburger-button:after {
+  content: "☰";
+}
+
+.hamburger-checkbox:checked ~ .hamburger-button:after {
+  content: "✕";
+}
+
+/* Navigation containers */
+.nav-menu {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  right: 0;
+  padding: 0.5rem 0;
+}
+
+.footer-nav-menu {
+  position: relative;
+}
+
+/* Navigation link lists */
+.nav-links {
+  margin: 0;
+  padding: 0;
+  right: 0;
+  min-width: 128px;
+  background: var(--color-primary);
+  list-style: none;
+}
+
+/* Responsive/hamburger nav dropdown */
+.hamburger-links {
+  position: absolute;
+  right: 0;
+  display: none;
+  opacity: 0;
+  top: 100%;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-links {
+  display: block;
+  opacity: 1;
+}
+
+/* Navigation items and interaction */
+.nav-links li {
+  border-bottom: 1px solid var(--color-accent-1);
+}
+
+.nav-links li:last-child {
+  border-bottom: none;
+}
+
+.hamburger-links li:first-child {
+  border-top: 1px solid var(--color-accent-1);
+}
+
+.nav-links li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  background: var(--color-accent-1);
+  color: var(--color-primary);
+}
+
+.nav-links:not(.hamburger-links, .bottom-links) li a {
+  text-align: right;
+}
+
+/* ============= LINKS ============= */
 a {
   color: var(--color-accent-1);
 }
 
+/* ============= PARAGRAPH, FIGURES & SECTION STYLING ============= */
 p {
   margin-bottom: 1rem;
 }
@@ -105,6 +209,20 @@ figure {
 
 section {
   margin-bottom: 3rem;
+}
+
+figcaption {
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+td {
+  padding: 0.25rem;
+}
+
+/* ============= COMPONENTS & VISUAL ACCENTS ============= */
+.grid-image {
+  border: var(--color-text) 1px solid;
 }
 
 .case-nav {
@@ -156,11 +274,16 @@ section {
   padding: 0.75rem 0.875rem;
 }
 
+/* ============= UTILITIES & LAYOUT HELPERS ============= */
+#hero {
+  margin-bottom: 8rem;
+}
+
+/* ============= IMAGE STYLES & MEDIA ============= */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  padding-bottom: 0.5rem;
 }
 
 .img-full {
@@ -180,7 +303,7 @@ img {
 .img-medium {
   width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 .img-fill {
@@ -190,8 +313,14 @@ img {
   object-position: center;
 }
 
+/* ============= MISCELLANEOUS TEXT ============= */
 .disclaimer {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.25rem;
+}
+
+.easteregg {
+  font-size: 0.5rem;
+  margin-top: 1rem;
 }
