@@ -1,5 +1,6 @@
 /* ============= GLOBAL COLOR AND OTHER VARIABLES ============= */
 :root {
+  /* COLORS */
   --color-dark-shale: #121417;
   --color-mid-shale: #1e2128;
   --color-off-white: #f4f6f8;
@@ -11,8 +12,43 @@
   --color-shadow-accent: var(--color-mid-shale);
   --color-text: var(--color-off-white);
   --color-primary: var(--color-blue);
+  --color-primary-glow: rgba(46, 109, 246, 0.75);
   --color-accent-1: var(--color-cyan);
+  --color-accent-1-glow: rgba(54, 229, 205, 0.75);
   --color-accent-2: var(--color-red);
+  --color-white-softborder: rgba(244, 246, 248, 0.7);
+
+  /* FONT SIZES*/
+  --font-xsmall: 0.5rem;
+  --font-small: 0.875rem;
+  --font-med: 1.125rem;
+  --font-lrg: 1.25rem;
+  --font-xlrg: 1.5rem;
+  --font-xxlrg: 2rem;
+
+  /* SPACING SYSTEM*/
+  --space-xsmall: 0.25rem;
+  --space-small: 0.5rem;
+  --space-med: 0.75rem;
+  --space-lrg: 1rem;
+  --space-xlrg: 2rem;
+  --space-xxlrg: 2.5rem;
+  --space-hero: 8rem; /* for #hero section */
+
+  /* BORDER RADIUS (rounded corners) */
+  --radius-small: 0.25rem;
+  --radius-med: 0.5rem;
+  --radius-lrg: 0.75rem;
+  --radius-xlrg: 1rem;
+
+  /* BORDER WIDTHS */
+  --border-thin: 1px;
+  --border-medium: 2px;
+  --border-thick: 3px;
+
+  /* COMPONENT SIZING */
+  --width-nav-min: 128px;
+  --width-hamburger-min: 200px;
 }
 
 /* ============= FONT FACES ============= */
@@ -40,7 +76,7 @@ body {
 }
 
 main {
-  padding: 2.5rem;
+  padding: var(--space-xxlrg);
 }
 
 .centered {
@@ -61,8 +97,8 @@ li,
 figcaption,
 .light-link {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: var(--font-med);
+  line-height: var(--font-xlrg);
   font-weight: 300;
   color: var(--color-text);
 }
@@ -81,7 +117,7 @@ h6,
 
 .logo-text {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: var(--font-xlrg);
   text-decoration: none;
 }
 
@@ -96,8 +132,8 @@ header,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
-  border-bottom: 3px solid var(--color-text);
+  padding: var(--space-lrg) var(--space-lrg);
+  border-bottom: var(--border-thick) solid var(--color-text);
 }
 
 .footer-top {
@@ -112,9 +148,9 @@ header,
 .hamburger-button {
   background: none;
   color: white;
-  padding: 0.25rem 1rem;
-  border-radius: 4px;
-  font-size: 1.25rem;
+  padding: var(--space-xsmall) var(--space-lrg);
+  border-radius: var(--radius-small);
+  font-size: var(--font-lrg);
 }
 
 .hamburger-button:after {
@@ -130,7 +166,7 @@ header,
   position: relative;
   margin-left: auto;
   right: 0;
-  padding: 0.5rem 0;
+  padding: var(--space-small) 0;
 }
 
 .footer-nav-menu {
@@ -142,7 +178,7 @@ header,
   margin: 0;
   padding: 0;
   right: 0;
-  min-width: 128px;
+  min-width: var(--width-nav-min);
   background: var(--color-primary);
   list-style: none;
 }
@@ -154,8 +190,11 @@ header,
   display: none;
   opacity: 0;
   top: 100%;
-  border-radius: 8px;
-  min-width: 200px;
+  border-radius: var(--radius-med);
+  min-width: var(--width-hamburger-min);
+  li a {
+    text-align: right;
+  }
 }
 
 .hamburger-checkbox:checked ~ .hamburger-links {
@@ -165,7 +204,7 @@ header,
 
 /* Navigation items and interaction */
 .nav-links li {
-  border-bottom: 1px solid var(--color-accent-1);
+  border-bottom: var(--border-thin) solid var(--color-accent-1);
 }
 
 .nav-links li:last-child {
@@ -173,12 +212,12 @@ header,
 }
 
 .hamburger-links li:first-child {
-  border-top: 1px solid var(--color-accent-1);
+  border-top: var(--border-thin) solid var(--color-accent-1);
 }
 
 .nav-links li a {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: var(--space-med) var(--space-lrg);
   color: var(--color-text);
   text-decoration: none;
 }
@@ -199,83 +238,83 @@ a {
 
 /* ============= PARAGRAPH, FIGURES & SECTION STYLING ============= */
 p {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-lrg);
 }
 
 figure {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-xlrg);
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-xxlrg);
 }
 
 figcaption {
-  padding-top: 0.25rem;
-  font-size: 0.875rem;
+  padding-top: var(--space-xsmall);
+  font-size: var(--font-small);
 }
 
 td {
-  padding: 0.25rem;
+  padding: var(--space-xsmall);
 }
 
 /* ============= COMPONENTS & VISUAL ACCENTS ============= */
 .grid-image {
-  border: var(--color-text) 1px solid;
+  border: var(--color-text) var(--border-thin) solid;
 }
 
 .case-nav {
-  font-size: 1.5rem;
+  font-size: var(--font-xlrg);
   font-weight: 900;
-  line-height: 1.5rem;
+  line-height: var(--font-lrg);
   color: var(--color-text);
 }
 
 .page-link {
-  font-size: 1.125rem;
+  font-size: var(--font-med);
   font-weight: 900;
   white-space: nowrap;
   color: var(--color-accent-1);
 }
 
 .page-title {
-  font-size: 2rem;
+  font-size: var(--font-xxlrg);
   color: var(--color-text);
-  padding-bottom: 0.5rem;
+  padding-bottom: var(--space-small);
 }
 
 .section-title {
   color: var(--color-accent-2);
-  font-size: 1.75rem;
-  border-bottom: var(--color-shadow-accent) 3px solid;
-  padding-bottom: 0.25rem;
-  margin-bottom: 0.75rem;
+  font-size: var(--font-xlrg);
+  border-bottom: var(--color-shadow-accent) var(--border-thick) solid;
+  padding-bottom: var(--space-xsmall);
+  margin-bottom: var(--space-med);
 }
 
 .section-subtitle {
   color: var(--color-text);
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: var(--font-lrg);
+  margin-bottom: var(--space-small);
 }
 
 .impact {
-  font-size: 1.5rem;
+  font-size: var(--font-xlrg);
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: var(--font-xlrg);
 }
 
 .stat {
-  font-size: 1.375rem;
+  font-size: var(--font-lrg);
   font-weight: 400;
-  line-height: 1.875rem;
-  border: var(--color-accent-1) 1px solid;
-  border-radius: 0.75rem;
-  padding: 0.75rem 0.875rem;
+  line-height: var(--font-xxlrg);
+  border: var(--color-accent-1) var(--border-thin) solid;
+  border-radius: var(--radius-lrg);
+  padding: var(--space-med) var(--space-lrg);
 }
 
 /* ============= UTILITIES & LAYOUT HELPERS ============= */
 #hero {
-  margin-bottom: 8rem;
+  margin-bottom: var(--space-hero);
 }
 
 /* ============= IMAGE STYLES & MEDIA ============= */
@@ -294,15 +333,15 @@ img {
   width: 100%;
   height: auto;
   padding-bottom: 0;
-  margin-bottom: 1rem;
-  border: var(--color-accent-2) 3px solid;
-  border-radius: 0.5rem;
+  margin-bottom: var(--space-lrg);
+  border: var(--color-accent-2) var(--border-thick) solid;
+  border-radius: var(--radius-med);
 }
 
 .img-medium {
   width: 80%;
   height: auto;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto var(--space-lrg) auto;
 }
 
 .img-fill {
@@ -312,14 +351,55 @@ img {
   object-position: center;
 }
 
+/* ============= PROJECT TILES ============= */
+.project-tile {
+  border: var(--border-medium) solid var(--color-white-softborder);
+  border-radius: var(--radius-xlrg);
+  margin-bottom: var(--space-xxlrg);
+  padding: calc(var(--space-xlrg) - 0.5rem) 0;
+
+  img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto var(--space-med) auto;
+    border: var(--border-medium) solid var(--color-white-softborder);
+    border-radius: var(--radius-med);
+  }
+
+  a,
+  h3 {
+    font-size: var(--font-lrg);
+    text-align: center;
+    margin-bottom: var(--space-med);
+  }
+
+  p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: var(--font-med);
+  }
+}
+
+.color1 {
+  border-color: var(--color-white-softborder);
+  box-shadow: 0 0 var(--space-small) var(--space-xsmall)
+    var(--color-accent-1-glow);
+}
+
+.color2 {
+  border-color: var(--color-white-softborder);
+  box-shadow: 0 0 var(--space-small) var(--space-xsmall)
+    var(--color-primary-glow);
+}
 /* ============= MISCELLANEOUS TEXT ============= */
 .disclaimer {
-  font-size: 0.875rem;
+  font-size: var(--font-small);
   font-weight: 300;
-  line-height: 1.25rem;
+  line-height: var(--font-lrg);
 }
 
 .easteregg {
-  font-size: 0.5rem;
-  margin-top: 1rem;
+  font-size: var(--font-xsmall);
+  margin-top: var(--space-lrg);
 }
