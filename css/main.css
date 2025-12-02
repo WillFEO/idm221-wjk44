@@ -51,6 +51,10 @@
   --width-hamburger-min: 200px;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= FONT FACES ============= */
 @font-face {
   font-family: "Poppins";
@@ -65,6 +69,10 @@
   font-weight: 100 900;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= GLOBAL LAYOUT & BASIC ELEMENTS ============= */
 html {
   background-color: var(--color-background);
@@ -89,6 +97,10 @@ main {
   text-align: center;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= TYPOGRAPHY: SHARED TEXT/HEADINGS ============= */
 
 p,
@@ -121,6 +133,10 @@ h6,
   text-decoration: none;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= HEADER & FOOTER ============= */
 header,
 footer {
@@ -140,6 +156,10 @@ header,
   height: fit-content;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= NAVIGATION MENU STYLES ============= */
 .hamburger-checkbox {
   display: none;
@@ -231,11 +251,23 @@ header,
   text-align: right;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= LINKS ============= */
 a {
   color: var(--color-accent-1);
 }
 
+#resume a {
+  font-size: var(--font-xlrg);
+}
+
+/**/
+/**/
+/**/
+/**/
 /* ============= PARAGRAPH, FIGURES & SECTION STYLING ============= */
 p {
   margin-bottom: var(--space-lrg);
@@ -258,6 +290,10 @@ td {
   padding: var(--space-xsmall);
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= COMPONENTS & VISUAL ACCENTS ============= */
 .grid-image {
   border: var(--color-text) var(--border-thin) solid;
@@ -312,11 +348,19 @@ td {
   padding: var(--space-med) var(--space-lrg);
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= UTILITIES & LAYOUT HELPERS ============= */
 #hero {
   margin-bottom: var(--space-hero);
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= IMAGE STYLES & MEDIA ============= */
 img {
   max-width: 100%;
@@ -351,6 +395,10 @@ img {
   object-position: center;
 }
 
+/**/
+/**/
+/**/
+/**/
 /* ============= PROJECT TILES ============= */
 .project-tile {
   border: var(--border-medium) solid var(--color-white-softborder);
@@ -392,6 +440,61 @@ img {
   box-shadow: 0 0 var(--space-small) var(--space-xsmall)
     var(--color-primary-glow);
 }
+
+/**/
+/**/
+/**/
+/**/
+/* ============= CONTACT FORM ============= */
+.contact-form {
+  width: 90%;
+  max-width: 420px;
+  background-color: var(--color-dark-shale);
+  margin: var(--space-xl) auto;
+  padding: var(--space-xlrg);
+  border: var(--border-medium) solid var(--color-white-softborder);
+  border-radius: var(--radius-lrg);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-med);
+  color: var(--color-text);
+  margin-bottom: var(--space-xsmall);
+  margin-left: var(--space-xsmall);
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--font-med);
+  color: var(--color-text);
+  background-color: var(--color-mid-shale);
+  border: var(--border-thin) solid var(--color-background);
+  border-radius: var(--radius-small);
+  margin-bottom: var(--space-small);
+  padding: var(--space-small), var(--space-med);
+  resize: vertical;
+}
+
+.contact-form button {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-lrg);
+  padding: var(--space-small) var(--space-lrg);
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-med);
+  cursor: not-allowed;
+}
+
+/**/
+/**/
+/**/
+/**/
 /* ============= MISCELLANEOUS TEXT ============= */
 .disclaimer {
   font-size: var(--font-small);
