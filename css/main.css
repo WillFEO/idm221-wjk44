@@ -476,8 +476,7 @@ img {
   border: var(--border-thin) solid var(--color-background);
   border-radius: var(--radius-small);
   margin-bottom: var(--space-small);
-  padding: var(--space-small), var(--space-med);
-  resize: vertical;
+  padding: var(--space-small) var(--space-med);
 }
 
 .contact-form button {
