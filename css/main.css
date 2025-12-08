@@ -295,10 +295,6 @@ td {
 /**/
 /**/
 /* ============= COMPONENTS & VISUAL ACCENTS ============= */
-.grid-image {
-  border: var(--color-text) var(--border-thin) solid;
-}
-
 .case-nav {
   font-size: var(--font-xlrg);
   font-weight: 900;
@@ -503,5 +499,5 @@ img {
 
 .easteregg {
   font-size: var(--font-xsmall);
-  margin-top: var(--space-lrg);
+  margin: var(--space-lrg) 0 0 0;
 }
