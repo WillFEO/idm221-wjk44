@@ -25,6 +25,7 @@
   --font-lrg: 1.25rem;
   --font-xlrg: 1.5rem;
   --font-xxlrg: 2rem;
+  --font-xxxlrg: 2.5rem;
 
   /* SPACING SYSTEM*/
   --space-xsmall: 0.25rem;
@@ -127,6 +128,10 @@ h6,
   color: var(--color-text);
 }
 
+b {
+  font-weight: 600;
+}
+
 .logo-text {
   font-weight: 900;
   font-size: var(--font-xlrg);
@@ -227,7 +232,7 @@ header,
   border-bottom: var(--border-thin) solid var(--color-accent-1);
 }
 
-.nav-links li:last-child {
+.nav-links:not(.bottom-links) li:last-child {
   border-bottom: none;
 }
 
@@ -298,7 +303,7 @@ td {
 .case-nav {
   font-size: var(--font-xlrg);
   font-weight: 900;
-  line-height: var(--font-lrg);
+  line-height: var(--font-xxxlrg);
   color: var(--color-text);
 }
 
@@ -320,7 +325,7 @@ td {
   font-size: var(--font-xlrg);
   border-bottom: var(--color-shadow-accent) var(--border-thick) solid;
   padding-bottom: var(--space-xsmall);
-  margin-bottom: var(--space-med);
+  margin-bottom: var(--space-lrg);
 }
 
 .section-subtitle {
@@ -348,15 +353,6 @@ td {
 /**/
 /**/
 /**/
-/* ============= UTILITIES & LAYOUT HELPERS ============= */
-#hero {
-  margin-bottom: var(--space-hero);
-}
-
-/**/
-/**/
-/**/
-/**/
 /* ============= IMAGE STYLES & MEDIA ============= */
 img {
   max-width: 100%;
@@ -367,6 +363,7 @@ img {
 .img-full {
   width: 100%;
   height: auto;
+  margin: 0 auto var(--space-lrg) auto;
 }
 
 .img-hero {
@@ -484,6 +481,29 @@ img {
   border: none;
   border-radius: var(--radius-med);
   cursor: not-allowed;
+}
+
+/**/
+/**/
+/**/
+/**/
+/* ============= UTILITIES & LAYOUT HELPERS ============= */
+#hero {
+  margin-bottom: var(--space-hero);
+}
+
+.about-text {
+  margin-bottom: var(--space-xlrg);
+}
+
+.extra-space-bottom {
+  margin-bottom: var(--space-xxlrg);
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /**/
