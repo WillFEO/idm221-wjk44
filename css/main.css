@@ -8,16 +8,18 @@
   --color-blue: #2e6df6;
   --color-red: #df2c53;
 
-  --color-background: var(--color-dark-shale);
-  --color-shadow-accent: var(--color-mid-shale);
-  --color-text: var(--color-off-white);
-  --color-primary: var(--color-blue);
-  --color-primary-glow: rgba(46, 109, 246, 0.75);
-  --color-accent-1: var(--color-cyan);
-  --color-accent-1-glow: rgba(54, 229, 205, 0.75);
-  --color-accent-2: var(--color-red);
   --color-white-softborder: rgba(244, 246, 248, 0.7);
   --color-white-glow: rgba(244, 246, 248, 0.25);
+  --color-primary-glow: rgba(46, 109, 246, 0.75);
+  --color-accent-1-glow: rgba(54, 229, 205, 0.75);
+  --color-shadow-accent: rgba(5, 5, 5, 0.5);
+
+  --color-background: var(--color-dark-shale);
+  --color-line-accent: var(--color-mid-shale);
+  --color-text: var(--color-off-white);
+  --color-primary: var(--color-blue);
+  --color-accent-1: var(--color-cyan);
+  --color-accent-2: var(--color-red);
 
   /* FONT FAMILIES */
   --font-family-body: "DM Sans", sans-serif;
@@ -357,7 +359,7 @@ td {
 .section-title {
   color: var(--color-accent-2);
   font-size: var(--font-xlrg);
-  border-bottom: var(--color-shadow-accent) var(--border-thick) solid;
+  border-bottom: var(--color-line-accent) var(--border-thick) solid;
   padding-bottom: var(--space-xsmall);
   margin-bottom: var(--space-lrg);
 }
@@ -392,6 +394,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  box-shadow: 0 0 var(--space-lrg) var(--space-xsmall)
+    var(--color-shadow-accent);
 }
 
 .img-full {
