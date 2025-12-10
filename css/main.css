@@ -6,7 +6,7 @@
   --color-off-white: #f4f6f8;
   --color-cyan: #36e5cd;
   --color-blue: #2e6df6;
-  --color-red: #db2d52;
+  --color-red: #df2c53;
 
   --color-background: var(--color-dark-shale);
   --color-shadow-accent: var(--color-mid-shale);
@@ -24,7 +24,8 @@
   --font-family-headings: "Poppins", sans-serif;
 
   /* FONT SIZES*/
-  --font-xsmall: 0.5rem;
+  --font-xxsmall: 0.5rem;
+  --font-xsmall: 0.75rem;
   --font-small: 0.875rem;
   --font-med: 1.125rem;
   --font-lrg: 1.25rem;
@@ -91,6 +92,8 @@ body {
 
 main {
   padding: var(--space-xxlrg);
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .centered {
@@ -133,6 +136,14 @@ h6,
   color: var(--color-text);
 }
 
+h3 {
+  margin-bottom: var(--space-small);
+}
+
+ul {
+  margin-bottom: var(--space-xlrg);
+}
+
 b {
   font-weight: 600;
 }
@@ -141,6 +152,25 @@ b {
   font-weight: 900;
   font-size: var(--font-xlrg);
   text-decoration: none;
+}
+
+.resume-main li {
+  font-size: var(--font-small);
+}
+
+.resume-main .large-link {
+  font-size: var(--font-xlrg);
+  font-weight: 500;
+}
+
+.resume-main p {
+  margin-bottom: var(--space-med);
+  font-weight: 500;
+}
+
+.work-location {
+  text-align: right;
+  white-space: nowrap;
 }
 
 /**/
@@ -292,7 +322,6 @@ section {
 }
 
 figcaption {
-  padding-top: var(--space-xsmall);
   font-size: var(--font-small);
 }
 
@@ -368,10 +397,11 @@ img {
 .img-full {
   width: 100%;
   height: auto;
-  margin: 0 auto var(--space-lrg) auto;
+  margin: 0 auto var(--space-med) auto;
 }
 
 .img-hero {
+  box-sizing: border-box;
   width: 100%;
   height: auto;
   padding-bottom: 0;
@@ -456,10 +486,11 @@ video {
 /**/
 /* ============= CONTACT FORM ============= */
 .contact-form {
+  box-sizing: border-box;
   width: 90%;
   max-width: 420px;
   background-color: var(--color-dark-shale);
-  margin: var(--space-xl) auto;
+  margin: var(--space-xlrg) auto;
   padding: var(--space-xlrg);
   border: var(--border-medium) solid var(--color-white-softborder);
   border-radius: var(--radius-lrg);
@@ -516,12 +547,6 @@ video {
   margin-bottom: var(--space-xxlrg);
 }
 
-.space-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /**/
 /**/
 /**/
@@ -534,6 +559,6 @@ video {
 }
 
 .easteregg {
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
   margin: var(--space-lrg) 0 0 0;
 }
