@@ -17,6 +17,11 @@
   --color-accent-1-glow: rgba(54, 229, 205, 0.75);
   --color-accent-2: var(--color-red);
   --color-white-softborder: rgba(244, 246, 248, 0.7);
+  --color-white-glow: rgba(244, 246, 248, 0.25);
+
+  /* FONT FAMILIES */
+  --font-family-body: "DM Sans", sans-serif;
+  --font-family-headings: "Poppins", sans-serif;
 
   /* FONT SIZES*/
   --font-xsmall: 0.5rem;
@@ -109,7 +114,7 @@ a,
 li,
 figcaption,
 .light-link {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family-body);
   font-size: var(--font-med);
   line-height: var(--font-xlrg);
   font-weight: 300;
@@ -123,7 +128,7 @@ h4,
 h5,
 h6,
 .logo-text {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family-headings);
   line-height: 1.25;
   color: var(--color-text);
 }
@@ -388,6 +393,17 @@ img {
   object-position: center;
 }
 
+video {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto var(--space-xxlrg) auto;
+  border: var(--color-off-white) var(--border-thin) solid;
+  border-radius: var(--radius-med);
+  box-shadow: 0 0 var(--space-small) var(--space-xsmall) var(--color-white-glow);
+}
+
 /**/
 /**/
 /**/
@@ -452,7 +468,7 @@ img {
 }
 
 .contact-form label {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family-headings);
   font-size: var(--font-med);
   color: var(--color-text);
   margin-bottom: var(--space-xsmall);
@@ -462,7 +478,7 @@ img {
 
 .contact-form input,
 .contact-form textarea {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family-body);
   font-size: var(--font-med);
   color: var(--color-text);
   background-color: var(--color-mid-shale);
@@ -473,7 +489,7 @@ img {
 }
 
 .contact-form button {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family-headings);
   font-size: var(--font-lrg);
   padding: var(--space-small) var(--space-lrg);
   color: var(--color-text);
