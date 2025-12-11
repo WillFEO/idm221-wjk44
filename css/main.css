@@ -9,7 +9,7 @@
 /* 04. TYPOGRAPHY: SHARED TEXT/HEADINGS */
 /* 05. PARAGRAPH, FIGURES & SECTION STYLING */
 /* 06. IMAGE & VIDEO STYLING */
-/* 07. COMPONENTS & VISUAL ACCENTS */
+/* 07. OTHER MISCELLANEOUS STYLING */
 /* 08. HEADER & FOOTER */
 /* 09. NAVIGATION MENU STYLES */
 /* 10. PROJECT TILES */
@@ -275,7 +275,7 @@ video {
 /**/
 /**/
 /**/
-/* ============= COMPONENTS & VISUAL ACCENTS ============= */
+/* ============= OTHER MISCELLANEOUS STYLING ============= */
 .case-nav {
   font-size: var(--font-xlrg);
   font-weight: 900;
