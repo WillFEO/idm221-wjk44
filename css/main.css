@@ -495,7 +495,7 @@ video {
   max-width: 420px;
   background-color: var(--color-dark-shale);
   margin: var(--space-xlrg) auto;
-  padding: var(--space-xlrg);
+  padding: var(--space-xlrg) var(--space-lrg);
   border: var(--border-medium) solid var(--color-white-softborder);
   border-radius: var(--radius-lrg);
   display: flex;
@@ -514,18 +514,19 @@ video {
 .contact-form input,
 .contact-form textarea {
   font-family: var(--font-family-body);
-  font-size: var(--font-med);
+  font-size: var(--font-xsmall);
   color: var(--color-text);
   background-color: var(--color-mid-shale);
   border: var(--border-thin) solid var(--color-background);
   border-radius: var(--radius-small);
-  margin-bottom: var(--space-small);
-  padding: var(--space-small) var(--space-med);
+  margin-bottom: var(--space-med);
+  padding: var(--space-small) var(--space-small);
 }
 
 .contact-form button {
   font-family: var(--font-family-headings);
   font-size: var(--font-lrg);
+  margin-top: var(--space-lrg);
   padding: var(--space-small) var(--space-lrg);
   color: var(--color-text);
   background-color: var(--color-primary);
@@ -544,7 +545,7 @@ video {
 }
 
 .about-text {
-  margin-bottom: var(--space-xlrg);
+  margin-bottom: var(--space-lrg);
 }
 
 .extra-space-bottom {
