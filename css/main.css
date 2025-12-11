@@ -1,3 +1,23 @@
+/**/
+/**/
+/**/
+/**/
+/* ============= TABLE OF CONTENTS ============= */
+/* 01. GLOBAL COLOR AND OTHER VARIABLES */
+/* 02. FONT FACES */
+/* 03. GLOBAL LAYOUT & BASIC ELEMENTS */
+/* 04. TYPOGRAPHY: SHARED TEXT/HEADINGS */
+/* 05. PARAGRAPH, FIGURES & SECTION STYLING */
+/* 06. IMAGE & VIDEO STYLING */
+/* 07. COMPONENTS & VISUAL ACCENTS */
+/* 08. HEADER & FOOTER */
+/* 09. NAVIGATION MENU STYLES */
+/* 10. PROJECT TILES */
+/* 11. CONTACT FORM */
+/* 12. UTILITIES & LAYOUT HELPERS */
+/* 13. MISCELLANEOUS TEXT */
+/**/
+
 /* ============= GLOBAL COLOR AND OTHER VARIABLES ============= */
 :root {
   /* COLORS */
@@ -93,19 +113,9 @@ body {
 }
 
 main {
-  padding: var(--space-xxlrg);
-  margin: 0 auto;
   max-width: 600px;
-}
-
-.centered {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.middle {
-  text-align: center;
+  margin: 0 auto;
+  padding: var(--space-xxlrg);
 }
 
 /**/
@@ -113,7 +123,6 @@ main {
 /**/
 /**/
 /* ============= TYPOGRAPHY: SHARED TEXT/HEADINGS ============= */
-
 p,
 a,
 li,
@@ -121,8 +130,8 @@ figcaption,
 .light-link {
   font-family: var(--font-family-body);
   font-size: var(--font-med);
-  line-height: var(--font-xlrg);
   font-weight: 300;
+  line-height: var(--font-xlrg);
   color: var(--color-text);
 }
 
@@ -150,12 +159,17 @@ b {
   font-weight: 600;
 }
 
+a {
+  color: var(--color-accent-1);
+}
+
 .logo-text {
-  font-weight: 900;
   font-size: var(--font-xlrg);
+  font-weight: 900;
   text-decoration: none;
 }
 
+/* RESUME TEXT STYLING */
 .resume-main li {
   font-size: var(--font-small);
 }
@@ -173,133 +187,6 @@ b {
 .work-location {
   text-align: right;
   white-space: nowrap;
-}
-
-/**/
-/**/
-/**/
-/**/
-/* ============= HEADER & FOOTER ============= */
-header,
-footer {
-  background-color: var(--color-primary);
-}
-
-header,
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-lrg) var(--space-lrg);
-  border-bottom: var(--border-thick) solid var(--color-text);
-}
-
-.footer-top {
-  height: fit-content;
-}
-
-/**/
-/**/
-/**/
-/**/
-/* ============= NAVIGATION MENU STYLES ============= */
-.hamburger-checkbox {
-  display: none;
-}
-
-.hamburger-button {
-  background: none;
-  color: white;
-  padding: var(--space-xsmall) var(--space-lrg);
-  border-radius: var(--radius-small);
-  font-size: var(--font-lrg);
-}
-
-.hamburger-button:after {
-  content: "☰";
-}
-
-.hamburger-checkbox:checked ~ .hamburger-button:after {
-  content: "✕";
-}
-
-/* Navigation containers */
-.nav-menu {
-  position: relative;
-  margin-left: auto;
-  right: 0;
-  padding: var(--space-small) 0;
-}
-
-.footer-nav-menu {
-  position: relative;
-}
-
-/* Navigation link lists */
-.nav-links {
-  margin: 0;
-  padding: 0;
-  right: 0;
-  min-width: var(--width-nav-min);
-  background: var(--color-primary);
-  list-style: none;
-}
-
-/* Responsive/hamburger nav dropdown */
-.hamburger-links {
-  position: absolute;
-  right: 0;
-  display: none;
-  opacity: 0;
-  top: 100%;
-  border-radius: var(--radius-med);
-  min-width: var(--width-hamburger-min);
-  li a {
-    text-align: right;
-  }
-}
-
-.hamburger-checkbox:checked ~ .hamburger-links {
-  display: block;
-  opacity: 1;
-}
-
-/* Navigation items and interaction */
-.nav-links li {
-  border-bottom: var(--border-thin) solid var(--color-accent-1);
-}
-
-.nav-links:not(.bottom-links) li:last-child {
-  border-bottom: none;
-}
-
-.hamburger-links li:first-child {
-  border-top: var(--border-thin) solid var(--color-accent-1);
-}
-
-.nav-links li a {
-  display: block;
-  padding: var(--space-med) var(--space-lrg);
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.nav-links li a:hover {
-  background: var(--color-accent-1);
-  color: var(--color-primary);
-}
-
-.nav-links:not(.hamburger-links, .bottom-links) li a {
-  text-align: right;
-}
-
-/**/
-/**/
-/**/
-/**/
-/* ============= LINKS ============= */
-a {
-  color: var(--color-accent-1);
 }
 
 #resume a {
@@ -335,65 +222,11 @@ td {
 /**/
 /**/
 /**/
-/* ============= COMPONENTS & VISUAL ACCENTS ============= */
-.case-nav {
-  font-size: var(--font-xlrg);
-  font-weight: 900;
-  line-height: var(--font-xxxlrg);
-  color: var(--color-text);
-}
-
-.page-link {
-  font-size: var(--font-med);
-  font-weight: 900;
-  white-space: nowrap;
-  color: var(--color-accent-1);
-}
-
-.page-title {
-  font-size: var(--font-xxlrg);
-  color: var(--color-text);
-  padding-bottom: var(--space-small);
-}
-
-.section-title {
-  color: var(--color-accent-2);
-  font-size: var(--font-xlrg);
-  border-bottom: var(--color-line-accent) var(--border-thick) solid;
-  padding-bottom: var(--space-xsmall);
-  margin-bottom: var(--space-lrg);
-}
-
-.section-subtitle {
-  color: var(--color-text);
-  font-size: var(--font-lrg);
-  margin-bottom: var(--space-small);
-}
-
-.impact {
-  font-size: var(--font-xlrg);
-  font-weight: 500;
-  line-height: var(--font-xlrg);
-}
-
-.stat {
-  font-size: var(--font-lrg);
-  font-weight: 400;
-  line-height: var(--font-xxlrg);
-  border: var(--color-accent-1) var(--border-thin) solid;
-  border-radius: var(--radius-lrg);
-  padding: var(--space-med) var(--space-lrg);
-}
-
-/**/
-/**/
-/**/
-/**/
-/* ============= IMAGE STYLES & MEDIA ============= */
+/* ============= IMAGE & VIDEO STYLING ============= */
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
   box-shadow: 0 0 var(--space-lrg) var(--space-xsmall)
     var(--color-shadow-accent);
 }
@@ -408,8 +241,8 @@ img {
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  padding-bottom: 0;
   margin-bottom: var(--space-lrg);
+  padding-bottom: 0;
   border: var(--color-accent-2) var(--border-thick) solid;
   border-radius: var(--radius-med);
 }
@@ -421,17 +254,17 @@ img {
 }
 
 .img-fill {
+  object-position: center;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 video {
+  display: block;
   width: 80%;
   max-width: 400px;
   height: auto;
-  display: block;
   margin: 0 auto var(--space-xxlrg) auto;
   border: var(--color-off-white) var(--border-thin) solid;
   border-radius: var(--radius-med);
@@ -442,12 +275,182 @@ video {
 /**/
 /**/
 /**/
+/* ============= COMPONENTS & VISUAL ACCENTS ============= */
+.case-nav {
+  font-size: var(--font-xlrg);
+  font-weight: 900;
+  line-height: var(--font-xxxlrg);
+  color: var(--color-text);
+}
+
+.page-link {
+  font-size: var(--font-med);
+  font-weight: 900;
+  color: var(--color-accent-1);
+  white-space: nowrap;
+}
+
+.page-title {
+  padding-bottom: var(--space-small);
+  font-size: var(--font-xxlrg);
+  color: var(--color-text);
+}
+
+.section-title {
+  margin-bottom: var(--space-lrg);
+  padding-bottom: var(--space-xsmall);
+  border-bottom: var(--color-line-accent) var(--border-thick) solid;
+  font-size: var(--font-xlrg);
+  color: var(--color-accent-2);
+}
+
+.section-subtitle {
+  margin-bottom: var(--space-small);
+  font-size: var(--font-lrg);
+  color: var(--color-text);
+}
+
+.impact {
+  font-size: var(--font-xlrg);
+  font-weight: 500;
+  line-height: var(--font-xlrg);
+}
+
+.stat {
+  padding: var(--space-med) var(--space-lrg);
+  border: var(--color-accent-1) var(--border-thin) solid;
+  border-radius: var(--radius-lrg);
+  font-size: var(--font-lrg);
+  font-weight: 400;
+  line-height: var(--font-xxlrg);
+}
+
+/**/
+/**/
+/**/
+/**/
+/* ============= HEADER & FOOTER ============= */
+header,
+footer {
+  background-color: var(--color-primary);
+}
+
+header,
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  padding: var(--space-lrg) var(--space-lrg);
+  border-bottom: var(--border-thick) solid var(--color-text);
+}
+
+/**/
+/**/
+/**/
+/**/
+/* ============= NAVIGATION MENU STYLES ============= */
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-button {
+  padding: var(--space-xsmall) var(--space-lrg);
+  border-radius: var(--radius-small);
+  background: none;
+  font-size: var(--font-lrg);
+  color: white;
+}
+
+.hamburger-button:after {
+  content: "☰";
+}
+
+.hamburger-checkbox:checked ~ .hamburger-button:after {
+  content: "✕";
+}
+
+/* Navigation containers */
+.nav-menu {
+  position: relative;
+  right: 0;
+  margin-left: auto;
+  padding: var(--space-small) 0;
+}
+
+.footer-nav-menu {
+  position: relative;
+}
+
+/* Navigation link lists */
+.nav-links {
+  right: 0;
+  min-width: var(--width-nav-min);
+  margin: 0;
+  padding: 0;
+  background: var(--color-primary);
+  list-style: none;
+}
+
+/* Responsive/hamburger nav dropdown */
+.hamburger-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  min-width: var(--width-hamburger-min);
+  border-radius: var(--radius-med);
+  opacity: 0;
+
+  li a {
+    text-align: right;
+  }
+}
+
+.hamburger-checkbox:checked ~ .hamburger-links {
+  display: block;
+  opacity: 1;
+}
+
+/* Navigation items and interaction */
+.nav-links li {
+  border-bottom: var(--border-thin) solid var(--color-accent-1);
+}
+
+.nav-links:not(.bottom-links) li:last-child {
+  border-bottom: none;
+}
+
+.hamburger-links li:first-child {
+  border-top: var(--border-thin) solid var(--color-accent-1);
+}
+
+.nav-links li a {
+  display: block;
+  padding: var(--space-med) var(--space-lrg);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.nav-links li a:hover {
+  background: var(--color-accent-1);
+  color: var(--color-primary);
+}
+
+.nav-links:not(.hamburger-links, .bottom-links) li a {
+  text-align: right;
+}
+
+/**/
+/**/
+/**/
+/**/
 /* ============= PROJECT TILES ============= */
 .project-tile {
-  border: var(--border-medium) solid var(--color-white-softborder);
-  border-radius: var(--radius-xlrg);
   margin-bottom: var(--space-xxlrg);
   padding: calc(var(--space-xlrg) - 0.5rem) 0;
+  border: var(--border-medium) solid var(--color-white-softborder);
+  border-radius: var(--radius-xlrg);
 
   img {
     width: 70%;
@@ -459,16 +462,16 @@ video {
 
   a,
   h3 {
+    margin-bottom: var(--space-med);
     font-size: var(--font-lrg);
     text-align: center;
-    margin-bottom: var(--space-med);
   }
 
   p {
     width: 80%;
     margin: 0 auto;
-    text-align: left;
     font-size: var(--font-med);
+    text-align: left;
   }
 }
 
@@ -490,48 +493,48 @@ video {
 /**/
 /* ============= CONTACT FORM ============= */
 .contact-form {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   width: 90%;
   max-width: 420px;
-  background-color: var(--color-dark-shale);
   margin: var(--space-xlrg) auto;
   padding: var(--space-xlrg) var(--space-lrg);
   border: var(--border-medium) solid var(--color-white-softborder);
   border-radius: var(--radius-lrg);
-  display: flex;
-  flex-direction: column;
+  background-color: var(--color-dark-shale);
 }
 
 .contact-form label {
-  font-family: var(--font-family-headings);
-  font-size: var(--font-med);
-  color: var(--color-text);
   margin-bottom: var(--space-xsmall);
   margin-left: var(--space-xsmall);
+  font-family: var(--font-family-headings);
+  font-size: var(--font-med);
   text-align: left;
+  color: var(--color-text);
 }
 
 .contact-form input,
 .contact-form textarea {
+  margin-bottom: var(--space-med);
+  padding: var(--space-small) var(--space-small);
+  border: var(--border-thin) solid var(--color-background);
+  border-radius: var(--radius-small);
+  background-color: var(--color-mid-shale);
   font-family: var(--font-family-body);
   font-size: var(--font-xsmall);
   color: var(--color-text);
-  background-color: var(--color-mid-shale);
-  border: var(--border-thin) solid var(--color-background);
-  border-radius: var(--radius-small);
-  margin-bottom: var(--space-med);
-  padding: var(--space-small) var(--space-small);
 }
 
 .contact-form button {
-  font-family: var(--font-family-headings);
-  font-size: var(--font-lrg);
   margin-top: var(--space-lrg);
   padding: var(--space-small) var(--space-lrg);
-  color: var(--color-text);
-  background-color: var(--color-primary);
   border: none;
   border-radius: var(--radius-med);
+  background-color: var(--color-primary);
+  font-family: var(--font-family-headings);
+  font-size: var(--font-lrg);
+  color: var(--color-text);
   cursor: not-allowed;
 }
 
@@ -552,6 +555,16 @@ video {
   margin-bottom: var(--space-xxlrg);
 }
 
+.centered {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.middle {
+  text-align: center;
+}
+
 /**/
 /**/
 /**/
@@ -564,6 +577,6 @@ video {
 }
 
 .easteregg {
-  font-size: var(--font-xxsmall);
   margin: var(--space-lrg) 0 0 0;
+  font-size: var(--font-xxsmall);
 }
