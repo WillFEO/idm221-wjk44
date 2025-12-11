@@ -86,13 +86,13 @@
 /**/
 /* ============= FONT FACES ============= */
 @font-face {
-  font-family: "Poppins";
+  font-family: Poppins;
   src: url("../fonts/Poppins/Poppins-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
 }
 
 @font-face {
-  font-family: "DM Sans";
+  font-family: DM Sans;
   src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf")
     format("truetype");
   font-weight: 100 900;
@@ -147,6 +147,10 @@ h6,
   color: var(--color-text);
 }
 
+p {
+  margin-bottom: var(--space-lrg);
+}
+
 h3 {
   margin-bottom: var(--space-small);
 }
@@ -189,19 +193,11 @@ a {
   white-space: nowrap;
 }
 
-#resume a {
-  font-size: var(--font-xlrg);
-}
-
 /**/
 /**/
 /**/
 /**/
-/* ============= PARAGRAPH, FIGURES & SECTION STYLING ============= */
-p {
-  margin-bottom: var(--space-lrg);
-}
-
+/* ============= FIGURES & SECTION STYLING ============= */
 figure {
   margin-bottom: var(--space-xlrg);
 }
@@ -362,11 +358,11 @@ header,
   color: white;
 }
 
-.hamburger-button:after {
+.hamburger-button::after {
   content: "☰";
 }
 
-.hamburger-checkbox:checked ~ .hamburger-button:after {
+.hamburger-checkbox:checked ~ .hamburger-button::after {
   content: "✕";
 }
 
@@ -417,12 +413,12 @@ header,
   border-bottom: var(--border-thin) solid var(--color-accent-1);
 }
 
-.nav-links:not(.bottom-links) li:last-child {
-  border-bottom: none;
-}
-
 .hamburger-links li:first-child {
   border-top: var(--border-thin) solid var(--color-accent-1);
+}
+
+.nav-links:not(.bottom-links) li:last-child {
+  border-bottom: none;
 }
 
 .nav-links li a {
@@ -545,6 +541,10 @@ header,
 /* ============= UTILITIES & LAYOUT HELPERS ============= */
 #hero {
   margin-bottom: var(--space-hero);
+}
+
+#resume a {
+  font-size: var(--font-xlrg);
 }
 
 .about-text {
